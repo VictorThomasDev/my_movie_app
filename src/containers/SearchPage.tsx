@@ -4,13 +4,13 @@ import React from 'react'
 
 
 const SearchPage: React.FC = (): JSX.Element => {
-    return (
-        <Container>
-            <h1>
-                SearchPage
-            </h1>
+  return (
+    <Container>
+      <h1>
+        SearchPage
+      </h1>
 
-        </Container>
-    )
+    </Container>
+  )
 }
 export default SearchPage
