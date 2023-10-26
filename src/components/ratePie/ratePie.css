@@ -1,0 +1,15 @@
+circle {
+  transition: all 0.7s ease-in-out;
+}
+
+.card > svg.ratePie {
+  background-color: rgba(255, 255, 255, 0.861);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -55px;
+  margin-top: 5px;
+}
+
+text.rateText {
+  color: rgb(255, 255, 255);
+}

@@ -1,6 +1,5 @@
 .card {
   width: 200px; /* Fixed width for all cards */
-  height: 350px; /* Fixed height for all cards */
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -17,7 +16,7 @@
 
 .cardImage {
   width: 100%;
-  max-height: 250px; /* Set a max-height to ensure the image fits within the card */
+  max-height: 300px; /* Set a max-height to ensure the image fits within the card */
   object-fit: contain;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

@@ -2,7 +2,7 @@ import { Container } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import MovieList from '../components/movieList/MovieCard';
 import Pagination from '../components/pagination/Pagination'
-import Spinner from '../components/Spinner/Spinner';
+import Spinner from '../components/spinner/Spinner';
 import { USER_PER_PAGE } from '../constants';
 import Imovie from '../interfaces/Imovie';
 import Imovies from '../interfaces/Imovies';
