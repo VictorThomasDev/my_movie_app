@@ -4,8 +4,11 @@ import { useNavigate } from 'react-router-dom';
 
 const SimpleAppBar: React.FC = (): JSX.Element => {
   const navigate = useNavigate();
-  const handleclick = () => {
+  const handleclickHome = () => {
     navigate('/')
+  }
+  const handleclickSearch = () => {
+    navigate('/SearchPage')
   }
 
   return (
@@ -16,8 +19,10 @@ const SimpleAppBar: React.FC = (): JSX.Element => {
             My movie app
           </Typography>
           <Grid marginLeft={10}>
-            <button color="inherit" onClick={() => { handleclick }}>A
-            </button>
+            <Button color="inherit" onClick={handleclickHome}>Home
+            </Button>
+            <Button color="inherit" onClick={handleclickSearch}>Search
+            </Button>
           </Grid>
         </Toolbar>
       </AppBar>

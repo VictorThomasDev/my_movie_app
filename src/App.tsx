@@ -6,15 +6,19 @@ import {
   BrowserRouter,
 } from 'react-router-dom';
 import Home from './containers/Home';
-import SimpleAppBar from './components/navbar';
+import SimpleAppBar from './components/Navbar';
+import SearchPage from './containers/SearchPage';
+import Movie from './containers/Movie';
 
 function App(): JSX.Element {
   return (
     <div className="App">
       <BrowserRouter>
         <SimpleAppBar></SimpleAppBar>
-        <Routes>
+        <Routes>SearchPage
           <Route path="/" element={<Home />} />
+          <Route path="/SearchPage" element={<SearchPage />} />
+          <Route path="/movie" element={<Movie />} />
         </Routes>
       </BrowserRouter>
     </div>
