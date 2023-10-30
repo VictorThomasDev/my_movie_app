@@ -1,9 +1,7 @@
-import { Container } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import MovieList from '../components/movieList/MovieCard';
+import MovieList from '../components/movieCard/MovieCard';
 import Pagination from '../components/pagination/Pagination'
 import Spinner from '../components/spinner/Spinner';
-import { USER_PER_PAGE } from '../constants';
 import Imovie from '../interfaces/Imovie';
 import Imovies from '../interfaces/Imovies';
 import getMovies from '../service/getMovies';
@@ -33,7 +31,7 @@ const Home: React.FC = (): JSX.Element => {
     setPage(num);
   }
   return (
-    <Container>
+    <div className='container mx-auto'>
       {!loading ? (
         <>
           <section className='card-list'>
@@ -49,7 +47,7 @@ const Home: React.FC = (): JSX.Element => {
         :
         <Spinner></Spinner>}
 
-    </Container>
+    </div>
   )
 }
 export default Home
